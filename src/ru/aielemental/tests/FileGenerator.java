@@ -23,11 +23,11 @@ public class FileGenerator {
         Random rnd = new Random();
         int lineCount = 100;
         if (args.length >= 1) {
-            lineCount = Integer.parseInt(args[1]);
+            lineCount = Integer.parseInt(args[0]);
         }
-        int lineSize = 10000;
+        int lineSize = 100;
         if (args.length >= 2) {
-            lineSize = Integer.parseInt(args[2]);
+            lineSize = Integer.parseInt(args[1]);
         }
         int lineBulks = lineSize / BLOCK;
         int lineTail = lineSize % BLOCK;
